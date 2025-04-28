@@ -10,7 +10,7 @@ export default function IncomeStats() {
                 <h3 className="font-semibold text-gray-700">Total Income</h3>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
                 <div className="bg-[#FFFFFF] py-5 rounded-sm">
                     <div className="border-l-4 border-blue-500 pl-4 rounded-sm">
                         <p className="text-sm font-bold">Today</p>

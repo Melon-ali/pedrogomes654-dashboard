@@ -28,7 +28,7 @@ export default function RootLayout({
               <div className="w-64 border-r">
                 <SidebarNavigation />
               </div>
-              <main className="flex-1 overflow-auto p-6">{children}</main>
+              <main className="flex-1 overflow-auto px-6">{children}</main>
             </div>
           </div>
         </ThemeProvider>

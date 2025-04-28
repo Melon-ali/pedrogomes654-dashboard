@@ -11,7 +11,7 @@ interface NavItem {
   href: string
 }
 
-export default function SidebarNavigation({ className, currentPath = "/" }: SidebarProps) {
+export default function SidebarNavigation() {
 
   const pathname = usePathname()
 
@@ -19,17 +19,17 @@ export default function SidebarNavigation({ className, currentPath = "/" }: Side
     {
       label: "Dashboard",
       icon: <LayoutDashboard className="w-5 h-5" />,
-      href: "/dashboard",
+      href: "/",
     },
     {
       label: "Shifts",
       icon: <Clock className="w-5 h-5" />,
-      href: "/shifts",
+      href: "/dashboard/shifts",
     },
     {
       label: "Drivers",
       icon: <Users className="w-5 h-5" />,
-      href: "/drivers",
+      href: "/dashboard/drivers",
     },
     {
       label: "Income",
