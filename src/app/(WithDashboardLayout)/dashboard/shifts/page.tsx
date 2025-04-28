@@ -5,7 +5,7 @@ export const metadata = {
     description: 'Pedrogomes Shifts',
   }
   
-  export default function ShiftPage() {
+  export default function ViewDriverPage() {
     return <Shifts />
   }
   

@@ -1,9 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import ShiftCard from "./shift-card"
-import ShiftSchedule from "./shift-schedule"
-import Link from "next/link"
+import ShiftCard from "../shifts/shift-card"
+import NewShiftForm from "./new-shift-form"
 
-const shifts = () => {
+const NewShift = () => {
     return (
         <div className="flex">
             {/* Main Content */}
@@ -22,10 +21,8 @@ const shifts = () => {
                             </div>
                         </div>
                         <button className="flex items-center gap-2 rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">
-                            <Link href={"/dashboard/newShift"}>
-                                <span className="text-xl">+</span>
-                                Create new shift
-                            </Link>
+                            <span className="text-xl">+ </span>
+                            Create new shift
                         </button>
                     </div>
 
@@ -39,11 +36,11 @@ const shifts = () => {
 
                 {/* Schedule */}
                 <div className="border border-white rounded-sm p-2 mt-4">
-                    <ShiftSchedule />
+                    <NewShiftForm />
                 </div>
             </main>
         </div>
     )
 }
 
-export default shifts
+export default NewShift
