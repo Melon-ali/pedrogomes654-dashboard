@@ -1,4 +1,6 @@
+/* eslint-disable react/jsx-key */
 import { FileText } from "lucide-react"
+import Link from "next/link"
 
 export default function RideSummary() {
   const rideData = [
@@ -56,7 +58,9 @@ export default function RideSummary() {
             <tbody className="divide-y divide-gray-200 bg-white">
               {rideData.map((ride, index) => (
                 <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                  <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500">{ride.date}</td>
+                  <Link href={"/dashboard/ride"}>
+                    <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500">{ride.date}</td>
+                  </Link>
                   <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-900">{ride.totalRide}</td>
                   <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-900">{ride.earned}</td>
                 </tr>

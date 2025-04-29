@@ -34,7 +34,7 @@ export default function SidebarNavigation() {
     {
       label: "Income",
       icon: <DollarSign className="w-5 h-5" />,
-      href: "/income",
+      href: "/dashboard/income",
     },
     {
       label: "Car info",
