@@ -39,7 +39,7 @@ export default function SidebarNavigation() {
     {
       label: "Car info",
       icon: <Info className="w-5 h-5" />,
-      href: "/car-info",
+      href: "/dashboard/carInfo",
     },
     {
       label: "Hotels",
